@@ -1,0 +1,4 @@
+var json_data_three = [{"hospital":"Mercy Medical Center-North Iowa","address":"1000 4th St.","city":"Mason City, Iowa 50401","phone":"(800) 433-3883","latitude":43.150633,"longitude":-93.217178},
+{"hospital":"Allen Memorial Hospital","address":"1825 Logan Ave.","city":"Waterloo, Iowa 50703","phone":"(319) 235-3629","latitude":42.526653,"longitude":-92.339567},
+{"hospital":"Covenant Medical Center","address":"3421 W. 9th St.","city":"Waterloo, Iowa 50702","phone":"(319) 272-8000","latitude":42.4641049,"longitude":-92.3454319},
+{"hospital":"Sartori Memorial Hospital","address":"515 College St.","city":"Cedar Falls, Iowa 50613","phone":"(319) 268-3800","latitude":42.533955,"longitude":-92.458382}]

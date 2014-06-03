@@ -1,0 +1,13 @@
+{
+  "name": "datatables-plugins",
+  "homepage": "https://github.com/DataTables/Plugins",
+  "_release": "cc9859f1f9",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "cc9859f1f9e172f7abbe8cf7c633475e311dd555"
+  },
+  "_source": "git://github.com/DataTables/Plugins.git",
+  "_target": "*",
+  "_originalSource": "datatables-plugins"
+}

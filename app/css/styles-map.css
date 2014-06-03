@@ -1,0 +1,374 @@
+/* line 31, ../scss/styles-map.scss */
+#courier-logo {
+  float: left;
+  height: 20px;
+  padding: 14px 0 0 5px;
+}
+
+/* line 37, ../scss/styles-map.scss */
+#header {
+  border-bottom: 1px solid #fff;
+  height: 50px;
+  top: 0px;
+}
+/* line 42, ../scss/styles-map.scss */
+#header h4 {
+  float: right;
+  color: white;
+  padding-right: 10px;
+  padding-top: 5px;
+  text-shadow: none;
+}
+
+/* line 51, ../scss/styles-map.scss */
+#footer-geocoder {
+  display: none;
+  border-top: 1px solid #fff;
+  height: 50px;
+  bottom: 0px;
+}
+
+/* line 59, ../scss/styles-map.scss */
+#mobile_headers {
+  float: left;
+  width: 100%;
+}
+
+/* line 64, ../scss/styles-map.scss */
+#mobile_header {
+  color: #333;
+  display: none;
+}
+
+/* line 69, ../scss/styles-map.scss */
+#mobile_header h4 {
+  font-family: Georgia;
+  margin: 0;
+  padding: 5px 0 5px 5px;
+}
+
+/* line 75, ../scss/styles-map.scss */
+#mobile_header h5 {
+  margin: 0;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+/* line 83, ../scss/styles-map.scss */
+#map_one {
+  background-color: #FFF;
+  height: 275px;
+  width: 100%;
+  z-index: 6;
+  cursor: default;
+}
+
+/* line 93, ../scss/styles-map.scss */
+#map {
+  background-color: #FFF;
+  right: 0px;
+  height: 100%;
+  position: absolute;
+  width: 68%;
+  z-index: 6;
+  cursor: default;
+  top: 0;
+}
+
+/* line 104, ../scss/styles-map.scss */
+.leaflet-control-container {
+  display: none;
+}
+
+/* line 108, ../scss/styles-map.scss */
+.leaflet-top {
+  top: 50px;
+}
+
+/* line 112, ../scss/styles-map.scss */
+.leaflet-bar {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 #444;
+  position: fixed;
+  right: 10px;
+}
+
+/* line 120, ../scss/styles-map.scss */
+#zoom-to-iowa {
+  z-index: 7;
+}
+
+/* line 124, ../scss/styles-map.scss */
+#zoom-to-iowa a, #zoom-to-iowa .drag-marker {
+  box-shadow: 0 1px 3px 0 #444;
+  position: absolute;
+  cursor: pointer;
+  font-weight: bold;
+  cursor: text;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* line 134, ../scss/styles-map.scss */
+#zoom-to-iowa a {
+  border-radius: 4px;
+  font-size: 12px;
+  top: 125px;
+  width: 46px;
+  right: 0px;
+  color: #bbb;
+}
+
+/* line 147, ../scss/styles-map.scss */
+#zoom-to-iowa .drag-marker {
+  border-bottom: none;
+  color: #333;
+  left: 33%;
+  top: 60px;
+  z-index: 14;
+  padding: 6px;
+  font-size: 16px;
+}
+
+/* line 157, ../scss/styles-map.scss */
+.drag-marker-text {
+  display: none;
+}
+
+/* line 162, ../scss/styles-map.scss */
+#legend {
+  padding: 0px 2%;
+  width: 28%;
+  z-index: 7;
+  min-height: 100%;
+  top: 0;
+}
+
+/* line 170, ../scss/styles-map.scss */
+#legend,
+#hide_show_legend {
+  background-color: #d8d8d8;
+  opacity: 1;
+  position: absolute;
+  left: 0px;
+}
+
+/* line 178, ../scss/styles-map.scss */
+#legend_colors {
+  padding-top: 20px;
+}
+
+/* line 182, ../scss/styles-map.scss */
+#legend h1 {
+  padding-top: 65px;
+}
+
+/* line 186, ../scss/styles-map.scss */
+#legend-text {
+  float: left;
+}
+
+/* line 190, ../scss/styles-map.scss */
+#legend_paragraph_mobile_only {
+  display: none;
+}
+
+/* line 195, ../scss/styles-map.scss */
+#hide_show_legend {
+  height: 20px;
+  margin: 5px 5px 0 0;
+  padding: 5px 5px 0 0;
+  z-index: 8;
+}
+
+/* line 202, ../scss/styles-map.scss */
+.icon-sort-up,
+.icon-sort-down,
+.hide_show_legend_text {
+  cursor: pointer;
+  float: right;
+  padding-left: 5px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 211, ../scss/styles-map.scss */
+.icon-sort-up {
+  padding-top: 5px;
+}
+
+/* line 215, ../scss/styles-map.scss */
+.icon-sort-down {
+  padding-bottom: 5px;
+}
+
+/* line 221, ../scss/styles-map.scss */
+#toggle-table {
+  float: left;
+  width: 100%;
+  padding: 12px 0;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* line 232, ../scss/styles-map.scss */
+#credits {
+  display: none;
+  color: #FFF;
+  float: left;
+  font-size: 11px;
+  line-height: 1.5em;
+  padding: 5px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  text-shadow: none;
+}
+
+/* line 245, ../scss/styles-map.scss */
+.description_box_text_etc, .description_box_text_etc p {
+  float: left;
+  width: 100%;
+}
+
+/* line 251, ../scss/styles-map.scss */
+#share {
+  width: 100%;
+}
+/* line 254, ../scss/styles-map.scss */
+#share ul {
+  margin: 0;
+}
+/* line 258, ../scss/styles-map.scss */
+#share li {
+  float: left;
+  list-style: none;
+}
+/* line 263, ../scss/styles-map.scss */
+#share #share-first-li {
+  padding-right: 15px;
+}
+
+/* line 269, ../scss/styles-map.scss */
+.icon-map-marker:before {
+  float: left;
+  font-size: 125%;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+/* line 277, ../scss/styles-map.scss */
+.geocoder {
+  width: 100%;
+  font-size: 17px;
+  margin: 5px 0px 10px 0px;
+  padding: 0;
+  vertical-align: middle;
+}
+/* line 284, ../scss/styles-map.scss */
+.geocoder .geocodifyInput {
+  width: 80%;
+  margin-bottom: 0px;
+  font-size: 17px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 4px 0 0 4px;
+  border-right: 0;
+}
+/* line 296, ../scss/styles-map.scss */
+.geocoder .geocodifyButton {
+  width: 10%;
+  min-height: 20px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+  color: #333;
+  *display: inline;
+  _height: 20px;
+}
+/* line 312, ../scss/styles-map.scss */
+.geocoder .geocodifyDropdown {
+  margin: 5px 0px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top-color: #d9d9d9;
+  padding: 5px 0 !important;
+  z-index: 9003;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* line 322, ../scss/styles-map.scss */
+.geocoder .geocodifyDropdown ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* line 327, ../scss/styles-map.scss */
+.geocoder .geocodifyDropdown li {
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 5px 8px;
+  text-align: left;
+}
+/* line 338, ../scss/styles-map.scss */
+.geocoder .selected {
+  background-color: #2262cc;
+  background-repeat: repeat-x;
+  color: #fff;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+}
+
+/* line 349, ../scss/styles-map.scss */
+#content-box {
+  display: none;
+}
+
+/* line 353, ../scss/styles-map.scss */
+#content-table_wrapper {
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+
+/* line 360, ../scss/styles-map.scss */
+#ie_warning {
+  background-color: #333;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 10000000;
+  width: 100%;
+  font-size: 14px;
+  bottom: 0;
+}
+
+/* line 373, ../scss/styles-map.scss */
+#search_box_text {
+  display: none;
+  font-size: 14px;
+  padding-right: 5px;
+  vertical-align: middle;
+}

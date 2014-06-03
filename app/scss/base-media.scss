@@ -1,0 +1,494 @@
+//* Styles for larger screens *//
+@media (max-width: 900) {
+    #legend_second_paragraph {
+        display: none;
+    }
+}
+
+@media (max-width: 800) {
+    #legend h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700) {
+    #legend h1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 13px;
+    }
+}
+
+
+//* Styles from mobile devices *//
+@media (max-width: 625px) {
+    //* Universals *//
+    .hidden-625 {
+        display: none;
+    }
+
+    .show-625 {
+        display: inline;
+    }
+
+    //* Headers *//
+    h1,
+    h2 {
+        line-height: 20px;
+    }
+
+    h3 {
+        line-height: 34px;
+    }
+
+
+    //* Content *//
+    .ui-mobile .ui-page, .pages-content {
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table th, .table td {
+        padding: 2px;
+    }
+
+    #eligibility-info, #eligibility-table {
+        width: 100%;
+        clear: both;
+    }
+
+    #page-one-button {
+        margin-top: 20px;
+    }
+
+    //* Maps *//
+    #map_one {
+        width: 80%;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 3px double #333;
+        border-top: 3px double #333;
+        background-color: #efefef;
+    }
+
+    #map {
+        border: 0 solid #737373;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .leaflet-top {
+        top: 90px;
+    }
+
+    #zoom-to-iowa a {
+        top: 165px;
+    }
+
+    .leaflet-popup {
+        max-width: 200px;
+    }
+
+
+    //* Legend for map *//
+    #legend {
+        width: 96%;
+        min-height: 50px;
+
+        #mobile-hide-show {
+            display: none;
+            width: 100%;
+            float: left;
+        }
+
+        #mobile-show {
+            width: 100%;
+            padding: 60px 0px 5px 0px;
+            float: left;
+
+            h1{
+                display: inline;
+                font-size: 16px;
+                padding-top: 0px;
+                margin-bottom: 0px;
+                float: left;
+            }
+
+            .showlegend-icon, .hidelegend-icon {
+                float: right;
+                color: #333;
+            }
+
+            .showlegend-icon:hover, .hidelegend-icon:hover {
+                text-decoration: none
+            }
+
+            .showlegend-icon {
+                display: inline;
+            }
+        }
+
+        .not-within-region {
+            padding-bottom: 0px;
+        }
+
+        .geocoder_box_one {
+            #geocoder_one {
+                width: 100%;
+                margin: 0px 0px 5px 0px;
+
+                .geocodifyInput, .geocodifyButton {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .ui-controlgroup-label {
+            font-size: 14px;
+            margin-bottom: 0px;
+            padding-top: 0px;
+        }
+
+        .form {
+            .ui-select {
+                margin-top: 5px;
+            }
+
+            #radiusSelected-button {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .legend_colors {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #d8d8d8;
+            box-shadow: 0 -1px 3px 0 #444;
+
+            .ui-controlgroup-label {
+                padding: 5px 0px 0px 5px;
+                font-family: Georgia;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .legend-mobile-float-left, .legend-mobile-float-right {
+                width: 48%;
+                padding-top: 0;
+                padding-bottom: 1%;
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+
+            .legend-mobile-float-left {
+                float: left;
+            }
+
+            .legend-mobile-float-right {
+                float: right;
+            }
+
+            .ui-checkbox .ui-btn {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 12px;
+                white-space: nowrap;
+            }
+
+            input[type="checkbox"] {
+                display: none;
+            }
+        }
+
+        #legend-text {
+            display: none;
+        }
+    }
+
+    //* Description, popup boxes *//
+    #popup-box {
+        bottom: 0;
+        height: auto;
+        left: 0%;
+        right: 0%;
+        top: auto;
+        width: 98%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #content-box {
+        bottom: 0%;
+        height: 100%;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        width: 98%;
+    }
+
+    .popup_item {
+        float: left;
+        width: 100%;
+    }
+
+    .popup_phone, .popup_phone_detailed, .popup_phone_detailed_number_URL {
+        text-align: left;
+        float: left;
+        width: 100%;
+    }
+
+    .popup_phone_detailed {
+        padding-top: 15px;
+    }
+    
+    .description_box {
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;  
+    }
+
+    .description_box_header h3 {
+        line-height: 25px;
+    }
+
+    .popup_header {
+        font-size: 14px;
+    }
+
+    .popup_address_city p {
+        line-height: 18px;
+    }
+
+    .popup_directions {
+        font-size: 14px;
+    }
+
+    .popup-mobile-icons {
+        padding: 2%;
+        width: auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+        max-width: 16%;
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .popup_services_header {
+        width: auto;
+        clear: left;
+        padding-top: 10px;
+    }
+
+    //* Header, footer, geocoder *//
+    #mobile_header {
+        border-bottom: 1px solid #fff;
+        border-width: 0 0 1px;
+        display: inline;
+        height: auto;
+        float: left;
+        left: 0;
+        margin-top: 0;
+        right: 0;
+        color: #fff;
+        position: relative;
+    }
+
+    //* Toggle map, table buttons *//
+    #toggle-map-table {
+        bottom: 60px;
+        left: 10px;
+        right: auto;
+    }
+
+    #search_box_text {
+        display: none;
+    }
+
+    #geocoder {
+        float: right;
+
+        .geocodifyInput {
+            width: 125px;
+        }
+    }
+}
+
+
+// Table styles
+@media (max-width: 575px)  {
+    //* Universals *//
+    .leaflet-top, .hidden-575 {
+        display: none;
+    }
+
+    .show-575 {
+        display: inline;
+    }
+
+
+    #content-box {
+        .table-bordered {
+            border: 0px solid #FFF;
+        }
+    }
+
+    #content-box {
+        /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+        }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        tr {
+            border-top: 1px solid #333;
+            border-bottom: 15px solid #FFF;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        td:first-child {
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #EAEBFF;
+        }
+
+        td { 
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee; 
+            position: relative;
+        }
+        
+        td:before { 
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            left: 6px;
+            width: 45%; 
+            padding-right: 10px; 
+            font-weight: bold;
+            white-space: nowrap;
+        }
+    }
+    
+    
+
+}
+
+// DataTable styles
+@media (max-width: 625px)  {
+    #content-table_wrapper > div:nth-child(3) > div:nth-child(1), #content-table_wrapper > div:nth-child(3) > div:nth-child(2) {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+// Nav tabs
+@media (max-width: 500px) {
+    .nav-tabs > li {
+        width: 100%;
+    }
+
+    .nav-tabs > li > a {
+        margin-left: 2px;
+    }
+}
+
+@media (max-width: 475px)  {
+    .dataTables_wrapper {
+        .row-fluid .span6 {
+            width: 100%;
+            margin: 0px;
+        }
+
+        .dataTables_length {
+            float: left;
+            width: 98%;
+            padding-right: 1%;
+            padding-left: 1%;
+
+            select, label {
+                width: 100%;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            select {
+                height: 30px;
+            }
+        }
+
+        .dataTables_filter {
+            float: left;
+            width: 98%;
+            padding-top: 15px;
+            padding-right: 1%;
+            padding-left: 1%;
+            padding-bottom: 15px;
+            padding-top: 15px;
+
+            label {
+                width: 100%;
+                text-align: left;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            input {
+                width: 97%;
+                padding-left: 2%;
+                padding-right: 0px;
+                padding-top: 2%;
+                padding-bottom: 2%;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px)  {
+    #header h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    #courier-logo {
+        width: 100px;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .hidden-300 {
+        display: none;
+    }
+}

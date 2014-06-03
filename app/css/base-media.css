@@ -1,0 +1,501 @@
+@media (max-width: 900) {
+  /* line 3, ../scss/base-media.scss */
+  #legend_second_paragraph {
+    display: none;
+  }
+}
+@media (max-width: 800) {
+  /* line 9, ../scss/base-media.scss */
+  #legend h1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 700) {
+  /* line 15, ../scss/base-media.scss */
+  #legend h1 {
+    font-size: 16px;
+  }
+
+  /* line 19, ../scss/base-media.scss */
+  h2 {
+    font-size: 24px;
+  }
+
+  /* line 23, ../scss/base-media.scss */
+  h3 {
+    font-size: 18px;
+  }
+
+  /* line 27, ../scss/base-media.scss */
+  p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 625px) {
+  /* line 36, ../scss/base-media.scss */
+  .hidden-625 {
+    display: none;
+  }
+
+  /* line 40, ../scss/base-media.scss */
+  .show-625 {
+    display: inline;
+  }
+
+  /* line 45, ../scss/base-media.scss */
+  h1,
+  h2 {
+    line-height: 20px;
+  }
+
+  /* line 50, ../scss/base-media.scss */
+  h3 {
+    line-height: 34px;
+  }
+
+  /* line 56, ../scss/base-media.scss */
+  .ui-mobile .ui-page, .pages-content {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* line 61, ../scss/base-media.scss */
+  .table th, .table td {
+    padding: 2px;
+  }
+
+  /* line 65, ../scss/base-media.scss */
+  #eligibility-info, #eligibility-table {
+    width: 100%;
+    clear: both;
+  }
+
+  /* line 70, ../scss/base-media.scss */
+  #page-one-button {
+    margin-top: 20px;
+  }
+
+  /* line 75, ../scss/base-media.scss */
+  #map_one {
+    width: 80%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px double #333;
+    border-top: 3px double #333;
+    background-color: #efefef;
+  }
+
+  /* line 85, ../scss/base-media.scss */
+  #map {
+    border: 0 solid #737373;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* line 93, ../scss/base-media.scss */
+  .leaflet-top {
+    top: 90px;
+  }
+
+  /* line 97, ../scss/base-media.scss */
+  #zoom-to-iowa a {
+    top: 165px;
+  }
+
+  /* line 101, ../scss/base-media.scss */
+  .leaflet-popup {
+    max-width: 200px;
+  }
+
+  /* line 107, ../scss/base-media.scss */
+  #legend {
+    width: 96%;
+    min-height: 50px;
+  }
+  /* line 111, ../scss/base-media.scss */
+  #legend #mobile-hide-show {
+    display: none;
+    width: 100%;
+    float: left;
+  }
+  /* line 117, ../scss/base-media.scss */
+  #legend #mobile-show {
+    width: 100%;
+    padding: 60px 0px 5px 0px;
+    float: left;
+  }
+  /* line 122, ../scss/base-media.scss */
+  #legend #mobile-show h1 {
+    display: inline;
+    font-size: 16px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    float: left;
+  }
+  /* line 130, ../scss/base-media.scss */
+  #legend #mobile-show .showlegend-icon, #legend #mobile-show .hidelegend-icon {
+    float: right;
+    color: #333;
+  }
+  /* line 135, ../scss/base-media.scss */
+  #legend #mobile-show .showlegend-icon:hover, #legend #mobile-show .hidelegend-icon:hover {
+    text-decoration: none;
+  }
+  /* line 139, ../scss/base-media.scss */
+  #legend #mobile-show .showlegend-icon {
+    display: inline;
+  }
+  /* line 144, ../scss/base-media.scss */
+  #legend .not-within-region {
+    padding-bottom: 0px;
+  }
+  /* line 149, ../scss/base-media.scss */
+  #legend .geocoder_box_one #geocoder_one {
+    width: 100%;
+    margin: 0px 0px 5px 0px;
+  }
+  /* line 153, ../scss/base-media.scss */
+  #legend .geocoder_box_one #geocoder_one .geocodifyInput, #legend .geocoder_box_one #geocoder_one .geocodifyButton {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+  /* line 161, ../scss/base-media.scss */
+  #legend .ui-controlgroup-label {
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+  /* line 168, ../scss/base-media.scss */
+  #legend .form .ui-select {
+    margin-top: 5px;
+  }
+  /* line 172, ../scss/base-media.scss */
+  #legend .form #radiusSelected-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* line 178, ../scss/base-media.scss */
+  #legend .legend_colors {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d8d8d8;
+    box-shadow: 0 -1px 3px 0 #444;
+  }
+  /* line 186, ../scss/base-media.scss */
+  #legend .legend_colors .ui-controlgroup-label {
+    padding: 5px 0px 0px 5px;
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  /* line 193, ../scss/base-media.scss */
+  #legend .legend_colors .legend-mobile-float-left, #legend .legend_colors .legend-mobile-float-right {
+    width: 48%;
+    padding-top: 0;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  /* line 201, ../scss/base-media.scss */
+  #legend .legend_colors .legend-mobile-float-left {
+    float: left;
+  }
+  /* line 205, ../scss/base-media.scss */
+  #legend .legend_colors .legend-mobile-float-right {
+    float: right;
+  }
+  /* line 209, ../scss/base-media.scss */
+  #legend .legend_colors .ui-checkbox .ui-btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  /* line 216, ../scss/base-media.scss */
+  #legend .legend_colors input[type="checkbox"] {
+    display: none;
+  }
+  /* line 221, ../scss/base-media.scss */
+  #legend #legend-text {
+    display: none;
+  }
+
+  /* line 227, ../scss/base-media.scss */
+  #popup-box {
+    bottom: 0;
+    height: auto;
+    left: 0%;
+    right: 0%;
+    top: auto;
+    width: 98%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* line 238, ../scss/base-media.scss */
+  #content-box {
+    bottom: 0%;
+    height: 100%;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    width: 98%;
+  }
+
+  /* line 247, ../scss/base-media.scss */
+  .popup_item {
+    float: left;
+    width: 100%;
+  }
+
+  /* line 252, ../scss/base-media.scss */
+  .popup_phone, .popup_phone_detailed, .popup_phone_detailed_number_URL {
+    text-align: left;
+    float: left;
+    width: 100%;
+  }
+
+  /* line 258, ../scss/base-media.scss */
+  .popup_phone_detailed {
+    padding-top: 15px;
+  }
+
+  /* line 262, ../scss/base-media.scss */
+  .description_box {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* line 267, ../scss/base-media.scss */
+  .description_box_header h3 {
+    line-height: 25px;
+  }
+
+  /* line 271, ../scss/base-media.scss */
+  .popup_header {
+    font-size: 14px;
+  }
+
+  /* line 275, ../scss/base-media.scss */
+  .popup_address_city p {
+    line-height: 18px;
+  }
+
+  /* line 279, ../scss/base-media.scss */
+  .popup_directions {
+    font-size: 14px;
+  }
+
+  /* line 283, ../scss/base-media.scss */
+  .popup-mobile-icons {
+    padding: 2%;
+    width: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    max-width: 16%;
+  }
+  /* line 291, ../scss/base-media.scss */
+  .popup-mobile-icons a:hover {
+    text-decoration: none;
+  }
+
+  /* line 296, ../scss/base-media.scss */
+  .popup_services_header {
+    width: auto;
+    clear: left;
+    padding-top: 10px;
+  }
+
+  /* line 303, ../scss/base-media.scss */
+  #mobile_header {
+    border-bottom: 1px solid #fff;
+    border-width: 0 0 1px;
+    display: inline;
+    height: auto;
+    float: left;
+    left: 0;
+    margin-top: 0;
+    right: 0;
+    color: #fff;
+    position: relative;
+  }
+
+  /* line 317, ../scss/base-media.scss */
+  #toggle-map-table {
+    bottom: 60px;
+    left: 10px;
+    right: auto;
+  }
+
+  /* line 323, ../scss/base-media.scss */
+  #search_box_text {
+    display: none;
+  }
+
+  /* line 327, ../scss/base-media.scss */
+  #geocoder {
+    float: right;
+  }
+  /* line 330, ../scss/base-media.scss */
+  #geocoder .geocodifyInput {
+    width: 125px;
+  }
+}
+@media (max-width: 575px) {
+  /* line 340, ../scss/base-media.scss */
+  .leaflet-top, .hidden-575 {
+    display: none;
+  }
+
+  /* line 344, ../scss/base-media.scss */
+  .show-575 {
+    display: inline;
+  }
+
+  /* line 350, ../scss/base-media.scss */
+  #content-box .table-bordered {
+    border: 0px solid #FFF;
+  }
+
+  /* line 355, ../scss/base-media.scss */
+  #content-box {
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  /* line 357, ../scss/base-media.scss */
+  #content-box table, #content-box thead, #content-box tbody, #content-box th, #content-box td, #content-box tr {
+    display: block;
+  }
+  /* line 362, ../scss/base-media.scss */
+  #content-box thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  /* line 368, ../scss/base-media.scss */
+  #content-box tr {
+    border-top: 1px solid #333;
+    border-bottom: 15px solid #FFF;
+  }
+  /* line 373, ../scss/base-media.scss */
+  #content-box td {
+    background-color: #f9f9f9;
+  }
+  /* line 377, ../scss/base-media.scss */
+  #content-box td:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #EAEBFF;
+  }
+  /* line 383, ../scss/base-media.scss */
+  #content-box td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+  }
+  /* line 390, ../scss/base-media.scss */
+  #content-box td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 625px) {
+  /* line 408, ../scss/base-media.scss */
+  #content-table_wrapper > div:nth-child(3) > div:nth-child(1), #content-table_wrapper > div:nth-child(3) > div:nth-child(2) {
+    width: 100%;
+    margin: 0px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 416, ../scss/base-media.scss */
+  .nav-tabs > li {
+    width: 100%;
+  }
+
+  /* line 420, ../scss/base-media.scss */
+  .nav-tabs > li > a {
+    margin-left: 2px;
+  }
+}
+@media (max-width: 475px) {
+  /* line 427, ../scss/base-media.scss */
+  .dataTables_wrapper .row-fluid .span6 {
+    width: 100%;
+    margin: 0px;
+  }
+  /* line 432, ../scss/base-media.scss */
+  .dataTables_wrapper .dataTables_length {
+    float: left;
+    width: 98%;
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+  /* line 438, ../scss/base-media.scss */
+  .dataTables_wrapper .dataTables_length select, .dataTables_wrapper .dataTables_length label {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  /* line 444, ../scss/base-media.scss */
+  .dataTables_wrapper .dataTables_length select {
+    height: 30px;
+  }
+  /* line 449, ../scss/base-media.scss */
+  .dataTables_wrapper .dataTables_filter {
+    float: left;
+    width: 98%;
+    padding-top: 15px;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  /* line 458, ../scss/base-media.scss */
+  .dataTables_wrapper .dataTables_filter label {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  /* line 465, ../scss/base-media.scss */
+  .dataTables_wrapper .dataTables_filter input {
+    width: 97%;
+    padding-left: 2%;
+    padding-right: 0px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
+@media (max-width: 425px) {
+  /* line 477, ../scss/base-media.scss */
+  #header h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 483, ../scss/base-media.scss */
+  #courier-logo {
+    width: 100px;
+    height: auto;
+  }
+}
+@media (max-width: 300px) {
+  /* line 491, ../scss/base-media.scss */
+  .hidden-300 {
+    display: none;
+  }
+}

@@ -1,0 +1,231 @@
+//* BODY STYLES GO HERE *//
+
+//* Universals *//
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background: url('http://wcfcourier.com/app/images/bg-image.jpg') repeat-x #d8d8d8;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia,serif;
+
+}
+
+a {
+    transition: all .2s ease-out;
+}
+
+hr {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+
+.show-625 {
+    display: none;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+//* Universal box shadow *//
+.box-shadow {
+    box-shadow: 0 1px 3px 0 #444;
+}
+
+.box-shadow-bottom {
+    box-shadow: 1px 0 3px 0 #444;
+}
+
+//* Share buttons *//
+#share {
+    visibility: hidden;
+}
+
+.fb_iframe_widget {
+    width: 90px;
+}
+
+//* HEADER, FOOTER STYLES GO HERE *//
+
+//* Properties for both header, footer *//
+.header-footer {
+    clear: both;
+    display: block;
+    background-color: #333;
+    color: #333;
+    font-size: 17px;
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    z-index: 120000000;
+}
+
+//* H1 styles *//
+#header-footer-geocoder h1,
+#legend h1,
+.description_box_text h1,
+.popup_header {
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+.popup_header {
+    background-color: #333;
+    padding: 10px 0 10px 5px;
+    border-bottom: 1px dotted #333;
+    color: #FFF;
+    text-shadow: none;
+}
+
+.popup_box_header {
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+//* Description, popup boxes *//
+.toggle_popup {
+    display: none;
+    padding: 10px;
+}
+
+.toggle_description {
+    float: right;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+}
+
+.btn-inverse {
+    font-size: 20px;
+}
+
+.toggle_description,
+.toggle_popup {
+    float: right;
+    font-size: 16px;
+    position: relative;
+    z-index: 9;
+}
+
+.description_box_cover,
+.popup_cover {
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 120000001;
+}
+
+.description_box_cover {
+    background-color: transparent;
+    background-color: rgba(33, 33, 33, 0.3);
+}
+
+.popup_cover {
+    background-color: transparent;
+    background-color: rgba(66, 66, 66, 0.3);
+}
+
+.description_box,
+.popup {
+    background-color: #f9f9f9;
+    border: 1px solid #999;
+    display: none;
+    overflow: scroll;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    position: absolute;
+    z-index: 13;
+}
+
+.description_box {
+    height: 96%;
+    left: 1%;
+    top: 1%;
+    width: 96%;
+}
+
+.popup {
+    bottom: 24%;
+    height: 50%;
+    left: 42%;
+    right: 14%;
+    top: 24%;
+    width: 44%;
+    z-index: 120000002;
+}
+
+//* Override for DataTables *//
+#content-box {
+    bottom: 10%;
+    height: 80%;
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    width: 80%;
+}
+
+//* Close button *//
+
+.x_button {
+    float: right;
+    text-shadow: 0 1px 2px 0 #444;
+    padding: 10px;
+}
+
+
+// Return to top nav box
+#footer-table {
+    clear: both;
+    z-index: 1000;
+    display: none;
+    bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    border-bottom: 0px solid #FFF;
+    -moz-box-shadow: 0 10px 10px #cccccc;
+    box-shadow: 0 0px 3px 0 #444444;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+}

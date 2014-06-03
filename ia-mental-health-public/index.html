@@ -1,0 +1,689 @@
+<!doctype html>
+<!--[if !IE]><!--><html class="nonie" lang="en"><![endif]-->
+<!--[if IE]><html class="ie" lang="en"><![endif]-->
+<head>
+	<title>GUIDE: Mental health, disability services in Northeast Iowa | WCFCourier.com</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <link rel="shortcut icon" href="http://wcfcourier.com/favicon.ico" />
+
+    <!-- Mobile meta tags-->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="http://wcfcourier.com/app/special/facebookcourierlogo.jpg"/>
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Facebook meta tags-->
+    <meta property="og:title" content="GUIDE: Mental health, disability services in Northeast Iowa"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://wcfcourier.com/app/special/ia-mental-health-public"/>
+    <meta property="og:image" content="http://wcfcourier.com/app/special/facebookcourierlogo.jpg"/>
+    <meta property="og:site_name" content="WCFCourier"/>
+    <meta property="og:description" content="In 2012, the mental health and disability system in Iowa was divided into 15 regions across the state. Here's our guide to navigating the mental health region that includes Northeast Iowa." />
+
+    <!-- Twitter meta tags -->
+    <meta property="twitter:site" content="@WCFCourier">
+    <meta property="twitter:card" content="Here's our guide to navigating the mental health region that includes Northeast Iowa.">
+    <meta property="twitter:url" content="http://wcfcourier.com/app/special/ia-mental-health-public">
+    <meta property="twitter:title" content="GUIDE: Mental health, disability services in Northeast Iowa">
+    <meta property="twitter:description" content="In 2012, the mental health and disability system in Iowa was divided into 15 regions across the state. Here's our guide to navigating the mental health region that includes Northeast Iowa.">
+    <meta property="twitter:image" content="http://wcfcourier.com/app/special/facebookcourierlogo.jpg">
+
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" href="css/none-ie.css"/>
+    <!--<![endif]-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/styles-ie.css"/>
+    <![endif]-->
+
+    <!-- Templates -->
+    <script id="popups-large-template" type="text/x-handlebars-template">
+        <a href="#map">
+            <div class="x_button toggle_popup btn btn-inverse icon-remove"></div>
+        </a>
+        
+        {{#each .}}
+            <div class="popup_header">{{ header }}</div>
+            <div class="popup_content">
+                <div class="popup_content_box">
+                    {{#each body}}
+                        {{#if value}}
+                            {{#compare title "Address"}}
+                                <div class="popup_item popup_address_city">
+                                    <div class="popup_address">
+                                        <p>{{value}}</p>
+                                    </div>
+                            {{else}}
+                                {{#compare title "Address02"}}
+                                    <div class="popup_address">
+                                        <p>{{value}}</p>
+                                    </div>
+                                {{else}}
+                                    {{#compare title "Address03"}}
+                                        <div class="popup_address">
+                                            <p>{{value}}</p>
+                                        </div>
+                                    {{else}}
+                                        {{#compare title "City"}}
+                                            <div class="popup_city">
+                                                <p>{{value}}</p>
+                                            </div>
+                                        {{else}}
+                                            {{#compare title "Address_City"}}
+                                                    <div class="popup_directions hidden-625">
+                                                        <a href="https://www.google.com/maps/place/{{value}}" target="_blank">
+                                                            <div class="icon-compass"></div> Get directions
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="popup_directions popup-mobile-icons float-left show-625">
+                                                    <a href="https://www.google.com/maps/place/{{value}}" target="_blank">
+                                                        <div class="icon-compass icon-2x"></div>
+                                                        <div>Directions</div>
+                                                    </a>
+                                                </div>
+                                            {{else}}
+                                                {{#compare title "Phone"}}
+                                                    <div class="popup_item popup_phone_detailed hidden-625">
+                                                        <div class="popup_phone_detailed_title">
+                                                            <strong>Phone</strong>:
+                                                        </div>
+                                                        <div class="popup_phone_detailed_number">
+                                                            <a href="tel:{{value}}"> {{value}}</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-mobile-icons float-left show-625">
+                                                        <a href="tel:{{value}}">
+                                                            <div class="icon-phone icon-2x"></div>
+                                                            <div>Phone</div>
+                                                        </a>
+                                                    </div>
+                                                {{else}}
+                                                    {{#compare title "24-hour phone"}}
+                                                        <div class="popup_phone_detailed hidden-625">
+                                                            <div class="popup_phone_detailed_title">
+                                                                <strong>24-hour support</strong>:
+                                                            </div>
+                                                            <div class="popup_phone_detailed_number">
+                                                                <a href="tel:{{value}}"> {{value}}</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="popup-mobile-icons float-left show-625">
+                                                            <a href="tel:{{value}}">
+                                                                <div class="icon-phone icon-2x"></div>
+                                                                <div>24-Hour</div>
+                                                            </a>
+                                                        </div>
+                                                    {{else}}
+                                                        {{#compare title "Website"}}
+                                                            <div class="popup_phone_detailed hidden-625">
+                                                                <div class="popup_phone_detailed_title">
+                                                                    <strong>{{title}}:</strong>
+                                                                </div>
+                                                                <div class="popup_phone_detailed_number_URL">
+                                                                    <a href="{{value}}" target="_blank"> {{removeHTTP value}}</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="popup-mobile-icons float-left show-625">
+                                                                <a href="{{value}}" target="_blank">
+                                                                    <div class="icon-external-link icon-2x"></div>
+                                                                    <div>Website</div>
+                                                                </a>
+                                                            </div>
+                                                        {{else}}
+                                                            {{#compare title "Services"}}
+                                                                <div class="popup-mobile-icons float-right show-625">
+                                                                    <a href="#services" class="servicesopen-icon">
+                                                                        <div class="icon-plus-sign icon-2x"></div>
+                                                                        <div>Services</div>
+                                                                    </a>
+                                                                </div>
+
+                                                                <div class="popup_item popup_services_header hidden-625"><strong>{{title}}</strong></div>
+                                                                <div class="popup-mobile-icons float-right show-625">
+                                                                    <a href="#servicesclose" class="servicesclose-icon">
+                                                                        <div class="icon-minus-sign icon-2x"></div>
+                                                                    </a>
+                                                                </div>
+
+                                                                <div class="popup_individual_services hidden-625">
+                                                                    {{#compare value "Mental health services"}}
+                                                                        <div class="icon-chevron-sign-right"></div> <a href="https://www.countysocialservices.org/index.php/programs/mentalhealth" target="_blank">{{value}}</a>
+                                                                     {{else}}
+                                                                        {{#compare value "Disability services coordination"}}
+                                                                            <div class="icon-chevron-sign-right"></div> <a href="https://www.countysocialservices.org/index.php/programs/casemanagement" target="_blank">{{value}}</a>
+                                                                        {{else}}
+                                                                            {{#compare value "Substance abuse services"}}
+                                                                                <div class="icon-chevron-sign-right"></div> <a href="https://www.countysocialservices.org/index.php/programs/substanceabuse" target="_blank">{{value}}</a>
+                                                                            {{else}}
+                                                                                {{#compare value "Crisis services"}}
+                                                                                    <div class="icon-chevron-sign-right"></div> <a href="https://www.countysocialservices.org/index.php/crisis-services" target="_blank">{{value}}</a>
+                                                                                {{else}}
+                                                                                    {{#compare value "Provides 24 hour crisis services."}}
+                                                                                        <div class="icon-chevron-sign-right"></div> <a href="https://www.countysocialservices.org/index.php/crisis-services" target="_blank">{{value}}</a>
+                                                                                    {{else}}
+                                                                                        <div class="icon-chevron-sign-right"></div> {{value}}
+                                                                                    {{/compare}}
+                                                                                {{/compare}}
+                                                                            {{/compare}}
+                                                                        {{/compare}}
+                                                                    {{/compare}}
+                                                                </div>
+                                                            {{else}}
+                                                                {{#compare title "Services_etc"}}
+                                                                    <div class="popup_individual_services hidden-625">
+                                                                        {{#compare value "Mental health services"}}
+                                                                            <div class="icon-chevron-sign-right"></div> <a href="https://www.countysocialservices.org/index.php/programs/mentalhealth" target="_blank">{{value}}</a>
+                                                                        {{else}}
+                                                                            {{#compare value "Disability services coordination"}}
+                                                                                <div class="icon-chevron-sign-right"></div> <a href="https://www.countysocialservices.org/index.php/programs/casemanagement" target="_blank">{{value}}</a>
+                                                                            {{else}}
+                                                                                {{#compare value "Substance abuse services"}}
+                                                                                    <div class="icon-chevron-sign-right"></div> <a href="https://www.countysocialservices.org/index.php/programs/substanceabuse" target="_blank">{{value}}</a>
+                                                                                {{else}}
+                                                                                    {{#compare value "Crisis services"}}
+                                                                                        <div class="icon-chevron-sign-right"></div> <a href="https://www.countysocialservices.org/index.php/crisis-services" target="_blank">{{value}}</a>
+                                                                                    {{else}}
+                                                                                        {{#compare value "Provides 24 hour crisis services."}}
+                                                                                            <div class="icon-chevron-sign-right"></div> <a href="https://www.countysocialservices.org/index.php/crisis-services" target="_blank">{{value}}</a>
+                                                                                        {{else}}
+                                                                                            <div class="icon-chevron-sign-right"></div> {{value}}
+                                                                                        {{/compare}}
+                                                                                    {{/compare}}
+                                                                                {{/compare}}
+                                                                            {{/compare}}
+                                                                        {{/compare}}
+                                                                    </div>
+                                                                {{/compare}}
+                                                            {{/compare}}
+                                                        {{/compare}}
+                                                    {{/compare}}
+                                                {{/compare}}
+                                            {{/compare}}
+                                        {{/compare}}
+                                    {{/compare}}
+                                {{/compare}}
+                            {{/compare}}
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+    <script id="content-box-template" type="text/x-handlebars-template">
+        {{#each .}}
+            {{#if county}}
+                <tr>
+                    <td>{{county}}</td>
+                    <td>{{address01}} {{address02}}</td>
+                    <td>{{city}}</td>
+                    <td><a href="tel:{{phone}}">{{phone}}</a></td>
+                    <td><a href="https://www.google.com/maps/place/{{address01}} {{city}}" target="_blank">Get directions</a></td>
+                </tr>
+            {{/if}}
+
+            {{#if name}}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{address01}}</td>
+                    <td>{{city}}, Iowa {{zip}}</td>
+                    <td><a href="tel:{{phone}}">{{phone}}</a></td>
+                    <td>{{services}}{{#if services_two}}<br />{{services_two}}{{/if}}{{#if services_three}}<br />{{services_three}}{{/if}}</td>
+                    <td><a href="https://www.google.com/maps/place/{{address01}} {{city}}" target="_blank">Get directions</a></td>
+                </tr>
+            {{/if}}
+        {{/each}}
+    </script>
+</head>
+<body>
+    <noscript>
+        <div id="noscript_note">
+            You must have JavaScript enabled to view this page.
+        </div>
+    </noscript>
+
+    <div id="spinner"></div>
+    <script type="text/javascript" src="js/spin_custom.js"></script>
+    <script>
+    var opts = {
+        lines: 13, // The number of lines to draw
+        length: 20, // The length of each line
+        width: 10, // The line thickness
+        radius: 30, // The radius of the inner circle
+        corners: 1, // Corner roundness (0..1)
+        rotate: 0, // The rotation offset
+        direction: 1, // 1: clockwise, -1: counterclockwise
+        color: '#000', // #rgb or #rrggbb or array of colors
+        speed: 1, // Rounds per second
+        trail: 60, // Afterglow percentage
+        shadow: false, // Whether to render a shadow
+        hwaccel: false, // Whether to use hardware acceleration
+        className: 'spinner', // The CSS class to assign to the spinner
+        zIndex: 2e9, // The z-index (defaults to 2000000000)
+        top: '150px', // Top position relative to parent
+        left: '50%' // Left position relative to parent
+    };
+    var target = document.getElementById('spinner');
+    var spinner = new Spinner(opts).spin(target);
+    </script>
+
+    <!-- JSON info -->
+    <script type="text/javascript" src="json/polygons.geojson"></script>
+    <script type="text/javascript" src="json/ia-outline.geojson"></script>
+    <script type="text/javascript" src="json/ne-iowa.geojson"></script>
+
+    <script type="text/javascript" src="json/regional_offices.json"></script>
+    <script type="text/javascript" src="json/providers.json"></script>
+
+    <!-- Require.js-->
+    <script data-main="js/config" src="js/require.js"></script>
+    
+    <div id="header" class="header-footer box-shadow-bottom">
+        <a href="http://wcfcourier.com/" target="_blank">
+            <img alt="Waterloo-Cedar Falls Courier" id="courier-logo" class="hide-300" src="imgs/WCFCourier_LOGO_BW_300px.png" />
+        </a>
+
+        <div class="toggle_description btn-toolbar">
+            <div id='btn-panel' class="btn btn-inverse">
+                <div class="icon-bar"></div>
+                <div class="icon-bar"></div>
+                <div class="icon-bar"></div>
+            </div>
+        </div>
+
+        <a href="#home">
+            <h4>MHDS in NE Iowa</h4>
+        </a>
+    </div>
+
+    <!-- Content for our pages goes here -->
+    <div class="pages-content">
+        
+        <!-- Share buttons -->
+        <div id="share">
+            <ul><li id="share-first-li">
+                <div class="fb-share-button" data-href="http://wcfcourier.com/app/special/ia-mental-health-public/" data-width="90" data-type="button_count"></div>
+            </li><li>
+                <a data-text="" href="http://twitter.com/share" class="twitter-share-button" data-url="http://wcfcourier.com/app/special/ia-mental-health-public" data-text="GUIDE: Mental health, disability services in Northeast Iowa" data-via="WCFCourier">Tweet</a>
+            </li></ul>
+        </div>
+
+        <!-- First page -->
+        <div class="page-one-content pages-individual">
+            <h3>Mental health and disability services in Northeast Iowa</h3>
+            <p> In 2012, the State Legislature redesigned the delivery system of <span class="content-standout">mental health and disabilities services (MHDS)</span> in Iowa. One of the most significant changes was to divide the state into 15 different regions.</p>
+            <p>In the 1990s, individual counties were tasked with providing mental health services to their residents. Under the redesign, residents can access any mental health services provided within their region. For example, a resident in Pocahontas County can now receive services from providers located in Black Hawk County.</p>
+            <h4>About the MHDS region in the Northeast Iowa</h4>
+            <p>The <a href="https://www.countysocialservices.org/index.php" target="_blank">region that includes Northeast Iowa</a> was created in 2009 by mental health administrator Bob Lincoln and the Black Hawk County board of supervisors. Iowa lawmakers credit it as the inspiration for the regional approach to mental health services, which is now in place statewide. The oldest and largest in terms of area covered, the region provides more services than is required by law.</p>
+            <p>The region includes <span class="content-standout">22 counties</span>, which are listed below. To receive services within the region, you must live in one of these counties. If you do, this website is your guide to receiving services.</p>
+            <p>If you don't live in one of these counties, you live in another mental health region. You will need to get ahold of a regional office in your area to obtain services. You can also visit the IDHS's mental health <a href="http://www.dhs.state.ia.us/Partners/MHDSRedesign.html" target="_blank">redesign website</a> or view <a href="http://www.dhs.state.ia.us/uploads/Map-of-Approved-MHDS-Regions.pdf" target="_blank">this map</a> of the mental health regions.</p>
+            
+            <div id="eligibility-info">
+                <h4>Eligibility</h4>
+                <p>The services are available to anyone with health insurance. For those who don’t have insurance or can’t pay out of pocket, the region will pay for your mental health and disability services provided you fall within 150 percent of federal poverty guidelines outlined in the chart shown. If you have health insurance you may also qualify for co-payment and deductible assistance by the region. For more information, contact your nearest regional office or visit the <a href="http://www.countysocialservices.org" target="_blank">region's website</a>.</p>
+            </div>
+            
+            <table id="eligibility-table" class="table">
+                <thead>
+                    <tr>
+                        <th class="Household Size-cell">Household Size</th>
+                        <th class="150% of federal poverty level (2014)-cell">150% of federal poverty level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="firstRow">
+                        <td class="Household Size-cell">1</td>
+                        <td class="150% of federal poverty level (2014)-cell">$17,505 </td>
+                    </tr>
+                    <tr>
+                        <td class="Household Size-cell">2</td>
+                        <td class="150% of federal poverty level (2014)-cell">23.595</td>
+                    </tr>
+                    <tr>
+                        <td class="Household Size-cell">3</td>
+                        <td class="150% of federal poverty level (2014)-cell">29.685</td>
+                    </tr>
+                    <tr>
+                        <td class="Household Size-cell">4</td>
+                        <td class="150% of federal poverty level (2014)-cell">35.775</td>
+                    </tr>
+                    <tr>
+                        <td class="Household Size-cell">5</td>
+                        <td class="150% of federal poverty level (2014)-cell">41.865</td>
+                    </tr>
+                    <tr>
+                        <td class="Household Size-cell">6</td>
+                        <td class="150% of federal poverty level (2014)-cell">47.955</td>
+                    </tr>
+                    <tr>
+                        <td class="Household Size-cell">7</td>
+                        <td class="150% of federal poverty level (2014)-cell">54.045</td>
+                    </tr>
+                    <tr class="lastRow">
+                        <td class="Household Size-cell">8</td>
+                        <td class="150% of federal poverty level (2014)-cell">60.135</td>
+                    </tr>
+              </tbody>
+            </table>
+
+            <h4 class="float-left width-100">Do you live in one of these counties?</h4>
+
+            <!-- Table of counties -->
+            <table class="float-left width-100 table">
+                <tr>
+                    <td>Allamakee</td>
+                    <td>Butler</td>
+                    <td>Black Hawk</td>
+                    <td>Cerro Gordo</td>
+                </tr>
+                <tr>
+                    <td>Clayton</td>
+                    <td>Chickasaw</td>
+                    <td>Emmet</td>
+                    <td>Fayette</td>
+                </tr>
+                <tr>
+                    <td>Floyd</td>
+                    <td>Grundy</td>
+                    <td>Hancock</td>
+                    <td>Howard</td>
+                </tr>
+                <tr>
+                    <td>Humboldt</td>
+                    <td>Kossuth</td>
+                    <td>Mitchell</td>
+                    <td>Pocahontas</td>
+                </tr>
+                <tr>
+                    <td>Tama</td>
+                    <td>Webster</td>
+                    <td>Winnebago</td>
+                    <td>Winneshiek</td>
+                </tr>
+                <tr>
+                    <td>Worth</td>
+                    <td>Wright</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            
+            <!-- Map box -->
+            <div id="map_one"></div>
+        </div>
+
+        <!-- Continue to second page button -->
+        <div class="page-one-content">
+            <div class="pages-buttons-boxes">
+                <a href="#second">
+                    <div id="page-one-button" class="btn btn-large btn-primary scrolltotop">
+                        <strong>Yes</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Second page -->
+        <div class="page-two-content pages-individual">
+            <h3>Types of services available within the region</h3>
+            <p>With more than a hundred mental health resources available in the region, it can be difficult to know where to begin looking for help. This website is designed to guide you through the maze and narrow the field of your search.</p>
+
+            <p>Click on one of the options below for more information on how to find services near you.</p>
+
+            <h4>I'm looking for a MHD service and...</h4>
+
+             <!-- Collapsible nav boxes -->
+             <div data-role="content" class="jqm-content">
+                <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+                    <div data-role="collapsible">
+                        <h3>I want to search by phone.</h3>
+                        <p>People who want mental health or disability services but don't have a particular office or service provider in mind should contact <span class="content-standout">LifeLong Links</span>:</p>
+                        <table style="width: 100%; margin-bottom: 15px;" cellpadding="5">
+                            <tr>
+                                <td style="width: 25px;">
+                                    <a href="tel:1-866-468-7887">
+                                        <div class="icon-phone icon-2x"></div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="tel:1-866-468-7887">
+                                        <h4>866-468-7887</h4>
+                                    </a>
+                                </td>
+                            </tr>
+                            </table>
+                        <p><a href="http://www.lifelonglinks.org/" target="_blank">LifeLong Links</a> will get the person in touch with the appropriate office or service provider, depending on his or her need.</p>
+                    </div>
+                    <div class='collapsible-second-option' data-role="collapsible">
+                        <h3>I want to search on the Internet.</h3>
+                        <p>This option allows you to search through our directory of MHD services in Northeast Iowa. For convenience, we've broken services into two broad categories:</p>
+                        
+                        <p><div class="icon-chevron-sign-right" style="vertical-align: text-top;"></div> <span class="content-standout">Regional offices</span> are intermediates between you and service providers. They can help connect you with mental health services within the region. Contact a regional office if you’re not sure what kind of services you need.</p>
+
+                        <p><div class="icon-chevron-sign-right" style="vertical-align: text-top;"></div> <span class="content-standout">Service providers</span> offer specialized services. This can include anything from one-on-one psychiatric treatment to transportation services. Contact a provider if you are looking for a specific service.</p>
+                        
+                        <p>To find services, simply enter your address into the search bar below and click the search button. You will then be taken to a map with a number of markers plotted on it. Each marker represents either a regional office or a service provider within the region.</p>
+
+                        <p>Click on the marker for more information on the services provided at that location. You can also get directions to a facility or call them directly.</p>
+                        
+                        <h4>Search for services near you:</h4>
+                        <div id="geocoder_box" class="geocoder_box_two">
+                            <form id="geocoder_two" class="geocoder"></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Go Back button -->
+        <div class="page-two-content">
+            <div class="pages-buttons-boxes">
+                <a href="#home">
+                    <div id="page-one-button" class="btn btn-large btn-primary scrolltotop">
+                        <strong>Go Back</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third page: Map box -->
+    <div class="page-three-content pages-individual">
+        
+        <!-- Box where our table will go -->
+        <div id="content-box" class="popup box-shadow">
+            <a id="top"></a>
+
+            <div class="x_button toggle_popup btn btn-inverse icon-remove"></div>
+            <div class="popup_header">Mental health, disability services in Northeast Iowa</div>
+
+            <!--- Our tables -->
+            <ul class="nav nav-tabs">
+                <li><a id='nav_regional' href="#regional" style="border-bottom: 3px solid #984ea3;">Regional offices</a></li>
+                <li><a id='nav_providers' href="#providers" style="border-bottom: 3px solid #4daf4a;">Providers</a></li>
+            </ul>
+
+            <h3 class='table-name'>Regional offices</h3>
+
+            <p>Here's a complete list of regional offices and providers in this mental health region. To see a list of facilities, select a category from the list above. A table showing each facility will show. You can then sort the table or search through it by typing in the box next to the word "Search".</p>
+
+            <table id="searchable-Regionaloffices" class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>County</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Directions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <table id="searchable-Providers" class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Facility</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Services</th>
+                        <th>Directions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <!-- For mobile -->
+        <a href="#top">
+            <div id='footer-table' class='header-footer'>
+                <div class="icon-arrow-up icon-white">
+                    <br />
+                    Return to Top
+                </div>
+            </div>
+        </a>
+
+        <!-- Legend -->
+        <div id="legend" class="box-shadow">
+            <div id="mobile-show">
+                <h1>Finding services</h1>
+                <a href="#showlegend" class="showlegend-icon">
+                    <div class="icon-plus-sign icon-2x"></div>
+                </a>
+                <a href="#hidelegend" class="hidelegend-icon">
+                    <div class="icon-minus-sign icon-2x"></div>
+                </a>
+            </div>
+
+            <div id="mobile-hide-show">
+                <div id="geocoder_box" class="geocoder_box_one">
+                    <form id="geocoder_one" class="geocoder"></form>
+                </div>
+
+                <div class="ui-controlgroup-label">Search radius:</div>
+                <div class="form">
+                    <select id="radiusSelected" name="radius">
+                        <option value="5">5 miles</option>
+                        <option value="10">10 miles</option>
+                        <option value="25">25 miles</option>
+                        <option value="50">50 miles</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="colors legend_colors within-region">
+                <div class="ui-controlgroup-label within-region">Results <span id="results-radius-mobile" class="show-625"></span>:</div>
+
+                <div class="legend-mobile-float-left">
+                    <div id="json_one_checkbox" class="select_box">
+                        <label class='checkbox'>
+                            <span class="button">
+                                <input type="checkbox" checked="checked" id="json_one" class="checkbox_json" />
+                            </span>
+                            <span id="json_one_results_title"><span id="json_one_results"></span> <span id="json_one_title">regional offices</span></span>
+                        </label>
+                    </div>
+                </div>
+                   
+                <div class="legend-mobile-float-right">
+                    <div id="json_two_checkbox" class="select_box">
+                        <label class='checkbox'>
+                            <span class="button">
+                                <input type="checkbox" checked="checked" id="json_two" class="checkbox_json" />
+                            </span>
+                            <span id="json_two_results_title"><span id="json_two_results"></span> <span id="json_two_title">providers</span></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="not-within-region">
+                <h4>Sorry, this address is not within the mental health region.</h4>
+            </div>
+
+            <div id="legend-text">
+                <div class="ui-controlgroup-label">How-to use</div>
+                <p>Type in your address to find MHD services near you. Find out more about a facility by clicking on their marker on the map.</p>
+                <div id="toggle-table" class="btn toggle-map-table-btn">Database: MHD services</div>
+            </div>
+
+            <br />
+        <!-- Close legend box -->
+        </div>
+
+        <!-- Popup box -->
+        <!-- Templated with Handlebars.js -->
+        <div id="popup-box" class="popup box-shadow"></div>
+        <div class="popup_cover"></div>
+
+        <!-- Map -->
+        <div id="map"></div>
+
+        <!-- Reset map view button -->
+        <div id="zoom-to-iowa" class="leaflet-bar hidden-575">
+            <a href="#map">
+                Reset
+            </a>
+        </div>
+    <!-- Close third box -->
+    </div>
+
+    <!-- Menu panel -->
+    <div data-role="panel" id="menu-panel" data-position="right" data-display="push">
+        <ul>
+            <li class="toggle_description scrolltotop">
+                <a href="#home">
+                    <div class="icon-panel icon-home"></div>
+                    Home
+                </a>
+            </li>
+            <li class="toggle_description scrolltotop">
+                <a href="#second">
+                    <div class="icon-panel icon-search"></div>
+                    Services
+                </a>
+            </li>
+            <li class="toggle_description">
+                <a href="#map">
+                    <div class="icon-panel icon-map-marker"></div>
+                    Map
+                </a>
+            </li>
+        </ul>
+
+        <div id="credits">
+            <p>Interactive: <a href="http://www.twitter.com/CourierEssig" target="_blank">Chris Essig</a> and <a href="https://twitter.com/manders2458" target="_blank">Mike Anderson</a> | Courier</p>
+            <p>Data: <a href="http://www.dhs.state.ia.us/mhdd/" target="_blank">Iowa Division of Mental Health and Disability Services</a></p>
+            <p>Spreadsheet: <a href="https://docs.google.com/spreadsheets/d/1KoC-j8hd40ZOgxy0NhAdN2V1STThI-svgVxWXIrWqsk/pubhtml" target="_blank">Download here</a></p>
+        </div>
+    </div>
+
+    <div id="ie_warning">You are using Internet Explorer 8 or lower. Please update your browser or download <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Google Chrome</a> or <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Mozilla Firefox</a> for a better viewing experience.</div>
+    
+    <div id="copyright-box">
+        <p>&copy; Copyright 2013, <a href="http://wcfcourier.com/" target="_blank">Waterloo Cedar Falls Courier</a>, 100 E. 4th St. Waterloo, IA | <a href="http://wcfcourier.com/terms/" target="_blank">Terms of Service</a> and <a href="http://wcfcourier.com/privacy/" target="_blank">Privacy Policy</a></p>
+    </div>
+
+    <!-- Facebook -->
+    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=148866255208434&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

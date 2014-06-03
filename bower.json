@@ -1,0 +1,21 @@
+{
+    "name": "navigating-our-mental-health-region",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "jquery": "1.11.1",
+        "font-awesome": "3.2.1",
+        "requirejs": "~2.1.5",
+        "requirejs-plugins": "",
+        "leaflet-dist": "0.7.1",
+        "leaflet-providers": "1.0.1",
+        "Leaflet.awesome-markers": "1.0.0",
+        "datatables": "1.9.4",
+        "datatables-plugins": "",
+        "handlebars": "1.0.0",
+        "bootstrap": "2.3.2",
+        "json": "",
+        "underscore": "1.6.0",
+        "backbone": "1.1.2"
+    }
+}

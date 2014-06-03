@@ -1,0 +1,9 @@
+/* line 1, ../scss/non-ie.scss */
+body {
+  visibility: hidden;
+}
+
+/* line 5, ../scss/non-ie.scss */
+#ie_warning {
+  display: none;
+}

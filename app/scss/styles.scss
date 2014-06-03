@@ -1,0 +1,316 @@
+/* Mixins */
+@mixin box-shadow($shadow) {
+	-webkit-box-shadow: $shadow;
+  	-moz-box-shadow: $shadow;
+  	-ms-box-shadow: $shadow;
+  	-o-box-shadow: $shadow;
+  	box-shadow: $shadow;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+// Add padding to text next to checkbox
+.ui-checkbox .ui-btn {
+	padding-left: 40px;
+}
+
+
+/* Menu */
+#menu-panel {
+	background-color: #444;
+	@include box-shadow(-5px 0 5px rgba(0,0,0,.15));
+	position: fixed;
+}
+
+#menu-panel ul {
+	padding: 0;
+	margin: 51px 0px 0px 0px;
+	list-style: none;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #666;
+
+}
+
+#menu-panel li {
+	width: 100%;
+	margin-right: 0px;
+}
+
+#menu-panel .toggle_description a {
+	color: #FFF !important;
+	text-shadow: 0 0 0 transparent;
+	font-size: 15px;
+	padding: 15px 10px 15px 20px;
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid #333;
+	border-top: 1px solid #666;
+	position: relative;
+	font-weight: bold;
+}
+
+
+#menu-panel .toggle_description a:hover {
+	background-color: #333;
+
+}
+
+.ui-panel-inner {
+	padding: 0px;
+}
+
+.icon-bar {
+	display: block;
+	width: 18px;
+	height: 3px;
+	background-color: #f5f5f5;
+	@include border-radius(1px);
+	@include box-shadow(0 1px 0 rgba(0, 0, 0, 0.25));
+	margin: 3px 0;
+}
+
+
+.icon-map-marker {
+	line-height: 12px;
+}
+
+.icon-panel {
+	float: left;
+	padding-right: 20px;
+	font-size: 1.5em;
+	opacity: 1;
+	color: #FFF !important;
+}
+
+/* Content */
+.pages-content {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding-top: 70px;
+	padding-left: 1%;
+	padding-right: 1%;
+	max-width: 620px;
+	min-height: 99.9%;
+	height: auto !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#eligibility-info {
+	float: left;
+	width: 49%;
+}
+
+#eligibility-table {
+ 	float: right;
+	width: 49%;
+	clear: none;
+
+	th, td {
+		text-align: center;
+	}
+
+	td {
+		padding: 4px;
+	}
+}
+
+.page-two-content, .page-three-content {
+	display: none;
+	width: 100%;
+}
+
+.pages-individual {
+	float: left;
+}
+
+.pages-buttons-boxes {
+	padding: 25px 0px 50px 0px;
+	text-align: center;
+}
+
+.content-standout {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+.not-within-region {
+	display:none;
+	padding: 20px 0px;
+}
+
+// Map on page three
+.leaflet-top .leaflet-control {
+	margin-right: 10px;
+}
+
+.awesome-marker-icon-red {
+	cursor: move;
+}
+
+
+// Collapsible nav on second page
+.ui-collapsible {
+	float: left;
+	width: 100%;
+}
+
+.collapsible-second-option {
+	font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+
+// Background color on results checkboxes 
+#json_one_checkbox .ui-checkbox .ui-checkbox-on:after {
+  background-color: #984ea3;
+}
+
+#json_two_checkbox .ui-checkbox .ui-checkbox-on:after {
+  background-color: #4daf4a;
+}
+
+// #json_three_checkbox .ui-checkbox .ui-checkbox-on:after {
+//   background-color: #ff7f00;
+// }
+
+// #json_four_checkbox .ui-checkbox .ui-checkbox-on:after {
+//   background-color: #377eb8;
+// }
+
+
+// Legend stuff
+#legend {
+	p {
+		margin-bottom: 5px;
+	}
+
+	#legend-text {
+		.ui-controlgroup-label {
+			font-weight: bold;
+			padding-top: 15px;
+		}
+	}
+
+	#mobile-show {
+		.showlegend-icon, .hidelegend-icon {
+			display: none;
+		}
+	}
+}
+
+
+// Popup styles
+.popup_address_city {
+	float: left;
+	color: #777;
+	clear: both;
+}
+
+.popup_address p {
+	margin-bottom: 0px;
+}
+
+.popup_directions {
+	font-size: 18px;
+	float: left;
+	width: 100%;
+}
+
+.popup_phone_website {
+	float: right;
+}
+
+.popup_phone, .popup_phone_detailed {
+	text-align: right;
+	padding-bottom: 15px;
+}
+
+.popup_phone, .popup_phone_detailed_number, .popup_phone_detailed_number_URL {
+	font-size: 20px;
+}
+
+.popup_phone_detailed_number_URL {
+	padding: 5px 0;
+	float: right;
+	max-width: 33%;
+    overflow: hidden;
+}
+
+
+.popup_services_header, .popup_individual_services {
+	float: left;
+	padding-bottom: 5px;
+}
+
+.popup_services_header {
+	width: 100%;
+	padding-top: 25px;
+	font-size: 18px;
+}
+
+.popup_individual_services {
+	width: 96%;
+	border-top: 1px solid #DDD;
+	padding: 2%;
+}
+
+.servicesclose-icon {
+	display: none;
+}
+
+.icon-chevron-sign-right:before {
+	color: #AAA;
+	padding-right: 5px;
+}
+
+
+
+// Tables that go with map
+#searchable-Mentalhealthcenters_wrapper, #searchable-Psychiatrichospitals_wrapper, #searchable-Providers_wrapper {
+	display: none;
+}
+
+/***** Nav *****/
+.nav {
+    margin-bottom: 10px;
+}
+
+.nav-tabs {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-bottom: 1px solid #FFF;
+}
+
+.nav-tabs > li > a, #candidates-names td {
+    font-weight: bold;
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+}
+
+.nav-tabs > li > a:hover {
+    background-color: #d6d6d6;
+    border: 1px solid #bebebe;
+}
+
+
+/* Copyright */
+#copyright-box {
+	background-color: #eee;
+	padding-top: 15px;
+	padding-bottom: 1px;
+	@include box-shadow(2px 0 2px 0 #444);
+}
+
+#copyright-box p {
+	margin-left: 1%;
+	margin-right: 1%;
+}
